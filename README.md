@@ -3,7 +3,8 @@ Here's a more comprehensive and professional README.md file for your booktickets
 ```markdown
 # BookTickets - Flight Booking App ✈️
 
-![BookTickets App Screenshot](https://github.com/user-attachments/assets/b09f6475-6ec4-424a-a810-91eac8f121d5)
+![Flutter Ticket Booking App](https://github.com/user-attachments/assets/1ae742ff-082b-46bd-ba9f-45bb779a6067)
+
 
 A modern Flutter application for booking flight tickets with beautiful UI and smooth user experience.
 
