@@ -1,125 +1,128 @@
-Here's a more comprehensive and professional README.md file for your booktickets Flutter project:
-
 ```markdown
-# BookTickets - Flight Booking App ✈️
+# FlyEase ✈️ - Flight & Hotel Booking App
 
-![Flutter Ticket Booking App](https://github.com/user-attachments/assets/19d3be09-0c43-4bf9-8a50-bb3914e6ff43)
+![FlyEase App Screens](assets/app_banner.png)
 
+A complete Flutter travel booking application with beautiful UI components and smooth user experience.
 
-A modern Flutter application for booking flight tickets with beautiful UI and smooth user experience.
-
-## Features ✨
-
-- 🛩️ Browse and book upcoming flights
-- 🏆 User profile with rewards system
-- 📅 Flight date selection
-- 💳 Secure payment processing
-- 🏨 Hotel booking integration (coming soon)
-- 🎟️ E-ticket management
-- 🥇 Premium member benefits
-
-## Screenshots 📱
-
-| Home Screen | Flight Selection | Profile |
-|-------------|------------------|---------|
-|   ![iPhone 15 Pro](https://github.com/user-attachments/assets/be36c164-fca7-48d7-b262-f1b57f962628)| ![iPhone 16 Pro](https://github.com/user-attachments/assets/99a2ad20-3c37-4d5f-9aff-eac619bc8b84)|
-
-## Technology Stack 🛠️
-
-- **Flutter** 3.x
-- **Dart** 3.x
-- **State Management**: Provider
-- **UI Components**: Custom widgets with Material Design
-- **Backend**: Firebase (optional)
-
-## Getting Started 🚀
-
-### Prerequisites
-
-- Flutter SDK (>=3.0.0)
-- Dart SDK (>=2.17.0)
-- Android Studio/VSCode with Flutter plugin
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/booktickets.git
-   ```
-2. Navigate to project directory:
-   ```bash
-   cd booktickets
-   ```
-3. Install dependencies:
-   ```bash
-   flutter pub get
-   ```
-4. Run the app:
-   ```bash
-   flutter run
-   ```
-
-## Project Structure 📂
+## Project Structure 🗂️
 
 ```
 lib/
 ├── main.dart                  # App entry point
-├── models/                    # Data models
-├── utils/                     # Utilities
+│
+├── screens/                   # All application screens
+│   ├── bottom_bar.dart        # Bottom navigation bar
+│   ├── home_screen.dart       # Main dashboard
+│   ├── hotel_screen.dart      # Hotel booking
+│   ├── profile_screen.dart    # User profile & rewards
+│   ├── search_screen.dart     # Flight search
+│   ├── ticket_screen.dart     # Ticket details
+│   └── ticket_view.dart       # Ticket UI component
+│
+├── utils/                     # Utilities & constants
+│   ├── app_info_list.dart     # App data constants
 │   ├── app_layout.dart        # Responsive layout utils
 │   └── app_styles.dart        # App styling/theming
-├── widgets/                   # Reusable components
-│   ├── thick_container.dart   # Custom container widget
-│   └── ticket_view.dart       # Ticket UI component
-└── screens/                   # App screens
-    ├── home_screen.dart       # Main screen
-    ├── profile_screen.dart    # User profile
-    └── booking_screen.dart    # Flight booking
+│
+└── widgets/                   # Reusable UI components
+    ├── column_layout.dart     # Custom column layout
+    ├── double_text_widget.dart # Dual text widget
+    ├── icon_text_widget.dart  # Icon + text combo
+    ├── layout_builder_widget.dart # Responsive builder
+    ├── thick_container.dart   # Styled container
+    └── ticket_tabs.dart       # Tabbed ticket view
 ```
+
+## Key Features ✨
+
+### Core Screens
+- **Home Screen**: Flight deals and quick actions
+- **Search Screen**: Find flights and hotels
+- **Ticket Screen**: View booking details
+- **Profile Screen**: Manage account and rewards
+- **Hotel Screen**: Browse accommodations
+
+### UI Components
+- **Custom Bottom Bar**: Persistent navigation
+- **Responsive Layouts**: Works on all devices
+- **Ticket Views**: Beautiful ticket displays
+- **Text Widgets**: Pre-styled text components
+
+## Getting Started 🚀
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SoftTac/FlyEase.git
+   ```
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Run the app:
+   ```bash
+   flutter run
+   ```
 
 ## Customization 🎨
 
-To customize the app appearance, modify:
-```dart
-lib/utils/app_styles.dart
-```
+### Modify App Theme
+Edit `lib/utils/app_styles.dart` to change:
+- Color scheme
+- Typography
+- App-wide styling
 
-Key customizable elements:
-- Primary color (`0xFF687daf`)
-- Background color (`0xFFeeedf2`)
-- Text colors
-- Typography styles
+### Update Content
+Edit `lib/utils/app_info_list.dart` to modify:
+- Flight/hotel data
+- Promotional content
+- Static app information
 
-## Build Instructions 📦
+## Widget Guide 🛠️
 
-To build release versions:
+| Widget | Description | Usage Example |
+|--------|-------------|---------------|
+| `ThickContainer` | Styled container with border | Ticket sections |
+| `DoubleTextWidget` | Two text elements with different styles | Price displays |
+| `IconTextWidget` | Icon + text combination | Feature items |
+| `ColumnLayout` | Custom column arrangement | Profile stats |
+| `TicketTabs` | Tabbed ticket interface | Flight details |
 
-```bash
-# Android
-flutter build apk --release
+## Screenshots 📱
 
-# iOS
-flutter build ios --release
-```
+| Home | Search | Profile |
+|------|--------|---------|
+![Flutter Ticket Booking App](https://github.com/user-attachments/assets/9242fa58-b004-4e12-b79c-0a30db91f67c)
+
+
+![iPhone 16 Pro](https://github.com/user-attachments/assets/c1f2e2b0-893f-474b-b2fd-e062bf050079)
+
+![iPhone 15 Pro](https://github.com/user-attachments/assets/93f90acd-a7a6-496d-88cf-342a6fd6a26c)
+
+## Building Blocks 🧱
+
+### Layout System
+- Uses `app_layout.dart` for responsive design
+- Consistent spacing with `LayoutBuilderWidget`
+- Adaptive components for all screen sizes
+
+### UI Patterns
+- Reusable widgets in `/widgets` folder
+- Screen-specific components in `/screens`
+- Centralized styling in `app_styles.dart`
 
 ## Contributing 🤝
 
-Contributions are welcome! Please follow these steps:
-
 1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
 
-## Contact 📧
-
-For questions or support, please contact:
-- Ahmad Khalil - ahmadkhanpakistan987@gmail.com
-- Project Link: [https://github.com/yourusername/booktickets](https://github.com/SoftTac/booktickets)
 
 ---
 
-Made with ❤️ using Flutter
+✈️ Developed with Flutter by [Ahmad Khalil Khattak] ✈️  
+🔗 [GitHub Repository](https://github.com/SoftTac/FlyEase)
 ```
