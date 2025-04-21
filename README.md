@@ -1,5 +1,3 @@
----
-
 ```markdown
 # ✈️ FlyEase - Flight & Hotel Booking App
 ![Flutter Ticket Booking App](https://github.com/user-attachments/assets/3ac2d037-65af-4c4e-9ab4-a2e13f64f998)
