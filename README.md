@@ -1,21 +1,9 @@
 ---
-```markdown
----
-```markdown
-# ✈️ FlyEase - Flight & Hotel Booking App
-...
-```
-```
-
-That **first `---`** and the duplicate markdown code block fence (` ```markdown ` at the start and end) are unnecessary **if this is your README.md**.
-
----
-
-### ✅ Here's the **corrected final version** of your `README.md` file — **ready to copy-paste**:
 
 ```markdown
 # ✈️ FlyEase - Flight & Hotel Booking App
-![Flutter Ticket Booking App](https://github.com/user-attachments/assets/3ac2d037-65af-4c4e-9ab4-a2e13f64f998)
+
+![FlyEase App Banner](assets/app_banner.png)
 
 **FlyEase** is a beautiful and functional Flutter application designed for seamless **flight and hotel booking**. Featuring smooth animations, reusable widgets, and a responsive layout — it's your all-in-one travel companion.
 
@@ -178,3 +166,5 @@ Update `lib/utils/app_info_list.dart` to change:
 
 📦 [FlyEase GitHub Repository](https://github.com/SoftTac/FlyEase)
 ```
+
+---
