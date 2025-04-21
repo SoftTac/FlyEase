@@ -22,7 +22,7 @@ A modern Flutter application for booking flight tickets with beautiful UI and sm
 
 | Home Screen | Flight Selection | Profile |
 |-------------|------------------|---------|
-| ![Home](assets/screenshots/home.png) | ![Flights](assets/screenshots/flights.png) | ![Profile](assets/screenshots/profile.png) |
+|   ![iPhone 15 Pro](https://github.com/user-attachments/assets/be36c164-fca7-48d7-b262-f1b57f962628)| ![iPhone 16 Pro](https://github.com/user-attachments/assets/99a2ad20-3c37-4d5f-9aff-eac619bc8b84)|
 
 ## Technology Stack 🛠️
 
